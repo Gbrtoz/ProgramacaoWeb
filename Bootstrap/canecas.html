@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Produto</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="favicon/canecas/favicon.ico" type="image/x-icon">
+    <style>
+        h1{
+            text-align: center;
+        }
+
+        .center-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Canecas Personalizadas</h1>
+        <div class="center-container">
+        <img src="imagens/canecas.jpg" width="40%">
+        </div>
+        <p>As canecas personalizadas são uma forma encantadora e versátil de expressar sua individualidade ou presentear alguém especial. Com uma ampla variedade de designs, cores e tamanhos disponíveis, você pode criar canecas únicas que se adequam ao seu estilo pessoal ou às ocasiões especiais.</p>
+        <p>Preço: R$ 24.99</p>
+        <!-- Abas de componentes NAV -->
+        <ul class="nav nav-tabs" id="myTabs" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="videos-tab" data-toggle="tab" href="#videos" role="tab" aria-controls="videos" aria-selected="true">Vídeos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="fotos-tab" data-toggle="tab" href="#fotos" role="tab" aria-controls="fotos" aria-selected="false">Fotos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="comentarios-tab" data-toggle="tab" href="#comentarios" role="tab" aria-controls="comentarios" aria-selected="false">Comentários</a>
+            </li>
+        </ul>
+        <!-- Conteúdo das abas -->
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="videos" role="tabpanel" aria-labelledby="videos-tab">
+                <!-- Embed do YT -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/8w4COTv1W0U?si=3ESrXaZQd73-tSvo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="tab-pane fade" id="fotos" role="tabpanel" aria-labelledby="fotos-tab">
+                <!-- Fotos -->
+                <img src="imagens/canecas/1.jpg" alt="">
+                <img src="imagens/canecas/2.jpg" alt="">
+                <img src="imagens/canecas/3.png" alt="" width="25%">
+                <img src="imagens/canecas/4.png" alt="" width="25%">
+            </div>
+            <div class="tab-pane fade" id="comentarios" role="tabpanel" aria-labelledby="comentarios-tab">
+                <!-- Comentários-->
+                <dl>
+                    <dt>José Aparecido</dt>
+                    <dd>Muito bom</dd>
+                    <p></p>
+                    <dt>Joaquim Jorge</dt>
+                    <dd>Otima qualidade</dd>
+                </dl>
+            </div>
+        </div>
+        <a href="index.html" class="btn btn-danger">Voltar</a> 
+        <button type="button" class="btn btn-success">Adicionar ao Carrinho</button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

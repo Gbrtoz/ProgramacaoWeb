@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Produto</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="favicon/kit/favicon.ico" type="image/x-icon">
+    <style>
+        h1{
+            text-align: center;
+        }
+
+        .center-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>   
+    <div class="container mt-5">
+        <h1>Kit de cozinha</h1>
+        <div class="center-container">
+        <img src="imagens/kit.jpg" width="40%" >
+        </div>
+        <p>Nosso kit de cozinha é a solução completa para transformar sua cozinha em um espaço funcional e eficiente, onde você pode preparar refeições deliciosas com facilidade e conveniência. Composto por quatro itens essenciais, este conjunto é perfeito para atender às necessidades de qualquer cozinheiro.</p>
+        <p>Preço: R$ 1999</p>
+        
+        <!-- Abas de componentes NAV -->
+        <ul class="nav nav-tabs" id="myTabs" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="videos-tab" data-toggle="tab" href="#videos" role="tab" aria-controls="videos" aria-selected="true">Vídeos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="fotos-tab" data-toggle="tab" href="#fotos" role="tab" aria-controls="fotos" aria-selected="false">Fotos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="comentarios-tab" data-toggle="tab" href="#comentarios" role="tab" aria-controls="comentarios" aria-selected="false">Comentários</a>
+            </li>
+        </ul>
+        <!-- Conteúdo das abas -->
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="videos" role="tabpanel" aria-labelledby="videos-tab">
+                <!-- Embed do YT -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/n29QFdGq7tg?si=85XXx1oaz_jIgLSX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="tab-pane fade" id="fotos" role="tabpanel" aria-labelledby="fotos-tab">
+                <!-- Fotos -->
+                <img src="imagens/kit/cafeteira.png" alt="" width="20%">
+                <img src="imagens/kit/liquidifica.png" alt="">
+                <img src="imagens/kit/panela.jpg" alt="">
+                <img src="imagens/kit/dg.jpg" alt="">
+            </div>
+            <div class="tab-pane fade" id="comentarios" role="tabpanel" aria-labelledby="comentarios-tab">
+                <!-- Comentários-->
+                <dl>
+                    <dt>Mariana Santos</dt>
+                    <dd>gosteei!</dd>
+                    <p></p>
+                    <dt>Carlos Daniel</dt>
+                    <dd>Ficou perfeito na minha cozinha</dd>
+                </dl>
+            </div>
+        </div>
+        <a href="index.html" class="btn btn-danger">Voltar</a> 
+        <button type="button" class="btn btn-success">Adicionar ao Carrinho</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
